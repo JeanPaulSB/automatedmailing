@@ -69,7 +69,7 @@ pendingUsers = df[df['Enviar'] == 1]
 context = ssl.create_default_context()
 
 for index,row in pendingUsers.iterrows():
-    name = row['Nombre']
+    name = row['Nombre Propietario']
     petName = row['Nombre del Cachorro']
     email = row['Correo Electrónico']
     trackID = row['Guía']

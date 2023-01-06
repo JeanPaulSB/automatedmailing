@@ -28,3 +28,6 @@
 2023-01-05 20:26:45,125 Email already sent to user with email:jeanpaulsierraboom@gmail.com 
 2023-01-05 20:27:07,521 Email already sent to user with email:jeanpaulsierraboom@gmail.com (skipping email) 
 2023-01-05 20:38:22,800 Email sended to: jeanpaulsierraboom@gmail.com succesfully
+2023-01-05 22:04:51,770 Email already sent to user with email:jeanpaulsierraboom@gmail.com (skipping email) 
+2023-01-05 22:05:23,589 (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials r30-20020ae9d61e000000b006fcc437c2e8sm26409426qkk.44 - gsmtp')
+2023-01-05 22:06:02,909 Email sended to: jeanpaulsierraboom@gmail.com succesfully

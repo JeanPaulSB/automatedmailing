@@ -33,35 +33,230 @@ email_recievers = ["jeanpaulsierraboom@gmail.com"]
 subject =  "TRACKING"
 
 
-body = f"""
-<html>
+style = """ <style type="text/css">
+      @media only screen and (min-width: 620px) {
+  .u-row {
+    width: 600px !important;
+  }
+  .u-row .u-col {
+    vertical-align: top;
+  }
 
-<body style="margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+  .u-row .u-col-100 {
+    width: 600px !important;
+  }
+
+}
+
+@media (max-width: 620px) {
+  .u-row-container {
+    max-width: 100% !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .u-row .u-col {
+    min-width: 320px !important;
+    max-width: 100% !important;
+    display: block !important;
+  }
+  .u-row {
+    width: 100% !important;
+  }
+  .u-col {
+    width: 100% !important;
+  }
+  .u-col > div {
+    margin: 0 auto;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+table,
+tr,
+td {
+  vertical-align: top;
+  border-collapse: collapse;
+}
+
+p {
+  margin: 0;
+}
+
+.ie-container table,
+.mso-container table {
+  table-layout: fixed;
+}
+
+* {
+  line-height: inherit;
+}
+
+a[x-apple-data-detectors='true'] {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+table, td { color: #000000; } @media (max-width: 480px) { #u_column_1 .v-col-padding { padding: 50px 0px 0px !important; } #u_content_heading_2 .v-font-size { font-size: 39px !important; } #u_column_2 .v-col-padding { padding: 50px 0px 30px !important; } #u_column_2 .v-col-border { border-top: 0px solid transparent !important;border-left: 0px solid transparent !important;border-right: 0px solid transparent !important;border-bottom: 0px solid transparent !important; } }
+    </style>
   
-<div class="container" style="width: 75%; height: 100vh; display: flex; flex-direction: column; background-color: #18097a; justify-content: center; align-items: center; color: white; font-family: Arial; font-weight: 700;">
-  <p>Hola Pedro!</p>
-  <p>Hablemos de las casualidades, de la suerte o de la vida. De todo lo que nos<br>tuvo que enseññar, todo lo que tuvimos que vivir,aprender, y cuántas cosas <br>
-tuviste que pasar para tomar la decisión en este preciso momento de tu vida de <br>
- compartir cada momento con mis cuatro patas caminando a tu lado.
-  </p>
+"""
+
+body = """
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<!--[if gte mso 9]>
+<xml>
+  <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="x-apple-disable-message-reformatting">
+  <!--[if !mso]><!--><meta http-equiv="X-UA-Compatible" content="IE=edge"><!--<![endif]-->
+  <title></title>
+  <style></style>
   
-  <p>
-    Y cuánto tuve que esperar yo, jugando muchos días, aprendiendo lo que debía <br> para preparme a tu llegada, todo lo que viví para que la vida me pusiera en tu<br>camino,desde el segundo en el que pensaste si era yo esa compañía ideal para<br> ti. Ese segundo en el que pensaste que podríamos ser mejores amigos por<br>siempre, que me diste una familia y un lugar como tu hijo.
-  </p>
-  <p>
-    No te conozco aún pero mis cuidadores ya me hablaron de ti, ellos me aman<br> demsiado, me cuidan mucho y aunque les da nostalgia que me vaya, ¡están <br> felices por tus ganas de verme! Ya me dijeron como piensas llamarme, donde <br> voy a vivir y lo importante que soy para ti. Por eso soy muy juicioso y me como<br>toda la comida, aprendor a ir al baño aunque a veces me equivoco, pero lo estoy<br>intentado. Me falta mucho por apprender pero quiero aprender a tu lado... Hay<br>muchas cosas que no conocemos del otro pero llegamos hasta aquí, y seré el<br>reflejo de tu respesto, tu amor, tu paciencia, tu bondad, tu comprensión y tu<br>compromiso.
-  </p>
-  <p>
-    Quiero jugar, que me dediques tiempo cada día, sé que estás ocupado pero<br>quiero pasar tiempo de calidad contigo, ojalá me lleves a tus viajes.<br>
- también quiero conocer como tú, me gusta ensuciarme, así que llévame a ser lo<br> que soy, un ser que disfruta de la naturaleza, de la compañía y del amor, no<br>
-    sólo me sirvas la comida y me ignores en casa, ten en cuenta que mi presencia<br>en tu vida no será eterna. Pero siempore recuerda que tú serás lo que yo más<br>ame en el mundo, y espero que el lugar que me des en tu corazón sea lo<br>
-    suficientemente grande para que yo pueda mover mucho mi colita y nuestras<br> almas siempre estén conectadas, en todo momento y con el paso del tiempo.
-  </p>
+
+
+<!--[if !mso]><!--><link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"><!--<![endif]-->
+
+</head>
+
+<body class="clean-body u_body" style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;background-color: #e7e7e7;color: #000000">
+  <!--[if IE]><div class="ie-container"><![endif]-->
+  <!--[if mso]><div class="mso-container"><![endif]-->
+  <table style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;min-width: 320px;Margin: 0 auto;background-color: #e7e7e7;width:100%" cellpadding="0" cellspacing="0">
+  <tbody>
+  <tr style="vertical-align: top">
+    <td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
+    <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center" style="background-color: #e7e7e7;"><![endif]-->
+    
+
+<div class="u-row-container" style="padding: 0px;background-image: url('https://cdn.templates.unlayer.com/assets/1660560649202-bg.png');background-repeat: no-repeat;background-position: center top;background-color: #ffffff">
+  <div class="u-row" style="Margin: 0 auto;min-width: 320px;max-width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+    <div style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
+      <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding: 0px;background-image: url('https://cdn.templates.unlayer.com/assets/1660560649202-bg.png');background-repeat: no-repeat;background-position: center top;background-color: #ffffff;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr style="background-color: transparent;"><![endif]-->
+      
+<!--[if (mso)|(IE)]><td align="center" width="600" class="v-col-padding v-col-border" style="width: 600px;padding: 70px 0px 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;" valign="top"><![endif]-->
+<div id="u_column_1" class="u-col u-col-100" style="max-width: 320px;min-width: 600px;display: table-cell;vertical-align: top;">
+  <div style="height: 100%;width: 100% !important;">
+  <!--[if (!mso)&(!IE)]><!--><div class="v-col-padding v-col-border" style="height: 100%; padding: 70px 0px 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;"><!--<![endif]-->
+  
+<table id="u_content_heading_2" style="font-family:'Montserrat',sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+  <tbody>
+    <tr>
+      <td style="overflow-wrap:break-word;word-break:break-word;padding:10px 10px 0px;font-family:'Montserrat',sans-serif;" align="left">
+        
+  <h1 class="v-font-size" style="margin: 0px; color: #eef3f6; line-height: 100%; text-align: center; word-wrap: break-word; font-weight: normal; font-family: arial,helvetica,sans-serif; font-size: 47px;"><strong>¿Papá? ¿Mamá? ¿Eres tú?</strong></h1>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="font-family:'Montserrat',sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+  <tbody>
+    <tr>
+      <td style="overflow-wrap:break-word;word-break:break-word;padding:0px;font-family:'Montserrat',sans-serif;" align="left">
+        
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td style="padding-right: 0px;padding-left: 0px;" align="center">
+      
+      <img align="center" border="0" src="https://cdn.templates.unlayer.com/assets/1660567741842-509066.png" alt="image" title="image" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 100%;max-width: 549px;" width="549"/>
+      
+    </td>
+  </tr>
+</table>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+  <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]-->
+  </div>
 </div>
+<!--[if (mso)|(IE)]></td><![endif]-->
+      <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+    </div>
+  </div>
+</div>
+
+
+
+<div class="u-row-container" style="padding: 0px;background-color: #ffffff">
+  <div class="u-row" style="Margin: 0 auto;min-width: 320px;max-width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+    <div style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
+      <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding: 0px;background-color: #ffffff;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr style="background-color: transparent;"><![endif]-->
+      
+<!--[if (mso)|(IE)]><td align="center" width="600" class="v-col-padding v-col-border" style="width: 600px;padding: 50px 0px 20px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+<div id="u_column_2" class="u-col u-col-100" style="max-width: 320px;min-width: 600px;display: table-cell;vertical-align: top;">
+  <div style="height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+  <!--[if (!mso)&(!IE)]><!--><div class="v-col-padding v-col-border" style="height: 100%; padding: 50px 0px 20px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;"><!--<![endif]-->
+  
+<table style="font-family:'Montserrat',sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+  <tbody>
+    <tr>
+      <td style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:'Montserrat',sans-serif;" align="left">
+        
+  <div style="line-height: 140%; text-align: left; word-wrap: break-word;">
+    <p style="font-size: 14px; line-height: 140%;"><span style="font-size: 12px; line-height: 16.8px;">Hablemos de las casualidades, de la suerte o de la vida. De todo lo que nos tuvo que enseñar, todo lo que tuvimos que vivir, aprender, y cuántas cosas tuviste que pasar para tomar la decisión en este preciso momento de tu vida de compartir cada momento con mis cuatro patas caminando a tu lado.</span></p>
+<p style="font-size: 14px; line-height: 140%;"> </p>
+<p style="font-size: 14px; line-height: 140%;"><span style="font-size: 12px; line-height: 16.8px;">Y cuánto tuve que esperar yo jugando muchos días, aprendiendo lo que debía para prepararme a tu llegada, todo lo que viví para que la vida me pusiera en tu camino, desde el  segundo en el que pensaste si era yo esa compañía ideal para ti. Ese segundo en el que pensaste que podríamos ser mejores amigos por siempre, que me diste una familia y un lugar como tu hijo.</span></p>
+<p style="font-size: 14px; line-height: 140%;"> </p>
+<p style="font-size: 14px; line-height: 140%;"><span style="font-size: 12px; line-height: 16.8px;">No te conozco aún pero mis cuidadores ya me hablaron de ti, ellos me aman demasiado, me cuidan mucho y aunque les da nostalgia que me vaya, ¡están  felices por tus ganas de verme! Ya me dijeron como piensas llamarme, donde  voy a vivir y lo importante que soy para ti. Por eso soy muy juicioso y me como toda la comida, aprendo a ir al baño aunque a veces me equivoco, pero lo estoy intentando. Me falta mucho por aprender pero quiero aprender a tu lado... Hay muchas cosas que no conocemos del otro pero llegamos hasta aquí, y seré el reflejo de tu respeto, tu amor, tu paciencia, tu bondad, tu comprensión y tu compromiso.</span></p>
+<p style="font-size: 14px; line-height: 140%;"> </p>
+<p style="font-size: 14px; line-height: 140%;"><span style="font-size: 12px; line-height: 16.8px;">Quiero jugar, que me dediques tiempo cada día, sé que estás ocupado pero quiero pasar tiempo de calidad contigo, ojalá me lleves a tus viajes.</span><br /><span style="font-size: 12px; line-height: 16.8px;">también quiero conocer como tú, me gusta ensuciarme, así que llévame a ser lo que soy, un ser que disfruta de la naturaleza, de la compañía y del amor, no</span><br /><span style="font-size: 12px; line-height: 16.8px;">sólo me sirvas la comida y me ignores en casa, ten en cuenta que mi presencia en tu vida no será eterna. Pero siempre recuerda que tú serás lo que yo más ame en el mundo, y espero que el lugar que me des en tu corazón sea lo suficientemente grande para que yo pueda mover mucho mi colita y nuestras almas siempre estén conectadas, en todo momento y con el paso del tiempo.</span></p>
+<p style="font-size: 14px; line-height: 140%;"> </p>
+<p style="font-size: 14px; line-height: 140%;"> </p>
+<p style="font-size: 14px; line-height: 140%;"><span style="font-size: 12px; line-height: 16.8px;">Puedes consultar en nuestra página por tu mascota con el seiguiente número de guía!</span></p>
+<p style="font-size: 14px; line-height: 140%;"> </p>
+<p style="font-size: 14px; line-height: 140%;"><span style="font-size: 12px; line-height: 16.8px;"><strong>ID: {0} </strong></span></p>
+<p style="font-size: 14px; line-height: 140%;"> </p>
+  </div>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+  <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]-->
+  </div>
+</div>
+<!--[if (mso)|(IE)]></td><![endif]-->
+      <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+    </div>
+  </div>
+</div>
+
+
+    <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+    </td>
+  </tr>
+  </tbody>
+  </table>
+  <!--[if mso]></div><![endif]-->
+  <!--[if IE]></div><![endif]-->
 </body>
+
+
+
 </html>
 
+
 """
+
+
+
+
 
 # getting selected users
 pendingUsers = df[df['Enviar'] == 1]
@@ -94,21 +289,10 @@ for index,row in pendingUsers.iterrows():
     # writing into db
         print("about to send email...")
 
+        body = body.format(int(trackID))
+        body = body.replace('<style></style>', style)
 
-
-        body = f"""
-        <html>
-        <body>
-        <h1>Hola {name}!</h1>
-        <h5>El número de tu guía es {trackID}</h5>
-        </body>
-        </html>
         
-        
-        
-        
-        
-        """
         # setting up email
         em = EmailMessage()
         em['From'] = email_password

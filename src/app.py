@@ -33,33 +33,26 @@ email_recievers = ["jeanpaulsierraboom@gmail.com"]
 subject =  "TRACKING"
 
 
-style = """    <style type="text/css">
+style = """  <style type="text/css">
       @media only screen and (min-width: 620px) {
   .u-row {
     width: 600px !important;
-    color-scheme: light only;
   }
   .u-row .u-col {
     vertical-align: top;
-    color-scheme: light only;
   }
 
   .u-row .u-col-33p33 {
     width: 199.98px !important;
-    color-scheme: light only;
   }
 
   .u-row .u-col-66p67 {
     width: 400.02px !important;
-    color-scheme: light only;
   }
 
   .u-row .u-col-100 {
     width: 600px !important;
-    color-scheme: light only;
   }
-
-  
 
 }
 
@@ -68,32 +61,25 @@ style = """    <style type="text/css">
     max-width: 100% !important;
     padding-left: 0px !important;
     padding-right: 0px !important;
-    color-scheme: light only;
   }
   .u-row .u-col {
     min-width: 320px !important;
     max-width: 100% !important;
     display: block !important;
-    color-scheme: light only;
   }
   .u-row {
     width: 100% !important;
-    color-scheme: light only;
   }
   .u-col {
     width: 100% !important;
-    color-scheme: light only;
   }
   .u-col > div {
     margin: 0 auto;
-    color-scheme: light only;
   }
-
 }
 body {
   margin: 0;
   padding: 0;
-  color-scheme: light only;
 }
 
 table,
@@ -101,7 +87,6 @@ tr,
 td {
   vertical-align: top;
   border-collapse: collapse;
-  color-scheme: light only;
 }
 
 p {
@@ -111,22 +96,20 @@ p {
 .ie-container table,
 .mso-container table {
   table-layout: fixed;
-  color-scheme: light only;
 }
 
 * {
   line-height: inherit;
-  color-scheme: light only;
 }
 
 a[x-apple-data-detectors='true'] {
   color: inherit !important;
   text-decoration: none !important;
-  color-scheme: light only;
 }
 
-table, td { color: #000000; color-scheme: light only; } #u_body a { color: #0000ee; text-decoration: underline; color-scheme: light only;} @media (max-width: 480px) { #u_row_1 .v-row-background-color { background-color: #236fa1 !important; color-scheme: light only; } #u_row_1.v-row-background-color { background-color: #236fa1 !important;  color-scheme: light only;} #u_row_1 .v-row-columns-background-color-background-color { background-color: #235070 !important; color-scheme: light only;} #u_column_1 .v-col-padding { padding: 50px 0px 0px !important; color-scheme: light only; } #u_column_1 .v-col-border { border-top: 0px solid transparent !important;border-left: 0px solid transparent !important;border-right: 0px solid transparent !important;border-bottom: 0px solid transparent !important; color-scheme: light only; } #u_row_2 .v-row-background-color { background-color: #041c1e !important; color-scheme: light only;} #u_row_2.v-row-background-color { background-color: #041c1e !important; color-scheme: light only; } #u_column_2 .v-col-padding { padding: 50px !important; color-scheme: light only;} #u_column_2 .v-col-border { border-top: 0px solid transparent !important;border-left: 0px solid transparent !important;border-right: 0px solid transparent !important;border-bottom: 0px solid transparent !important; color-scheme: light only; } #u_content_text_18 .v-container-padding-padding { padding: 14px !important; color-scheme: light only; } #u_content_text_18 .v-color { color: #ffffff !important; color-scheme: light only; } #u_content_text_18 .v-line-height { line-height: 140% !important; color-scheme: light only;} #u_content_text_23 .v-container-padding-padding { padding: 31px !important; color-scheme: light only;} }
+table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: underline; } @media (max-width: 480px) { #u_row_1 .v-row-background-color { background-color: #236fa1 !important; } #u_row_1.v-row-background-color { background-color: #236fa1 !important; } #u_row_1 .v-row-columns-background-color-background-color { background-color: #235070 !important; } #u_column_1 .v-col-padding { padding: 50px 0px 0px !important; } #u_column_1 .v-col-border { border-top: 0px solid transparent !important;border-left: 0px solid transparent !important;border-right: 0px solid transparent !important;border-bottom: 0px solid transparent !important; } #u_row_2 .v-row-background-color { background-color: #041c1e !important; } #u_row_2.v-row-background-color { background-color: #041c1e !important; } #u_column_2 .v-col-padding { padding: 50px !important; } #u_column_2 .v-col-border { border-top: 0px solid transparent !important;border-left: 0px solid transparent !important;border-right: 0px solid transparent !important;border-bottom: 0px solid transparent !important; } #u_content_text_18 .v-container-padding-padding { padding: 14px !important; } #u_content_text_18 .v-color { color: #ffffff !important; } #u_content_text_18 .v-line-height { line-height: 140% !important; } #u_content_image_23 .v-container-padding-padding { padding: 6px !important; } #u_content_text_23 .v-container-padding-padding { padding: 40px !important; } #u_content_text_23 .v-text-align { text-align: center !important; } #u_content_text_23 .v-line-height { line-height: 170% !important; } }
     </style>
+  
   
   
   
@@ -161,7 +144,7 @@ body = """
         
 <table width="100%" cellpadding="0" cellspacing="0" border="0">
   <tr>
-    <td style="padding-right: 0px;padding-left: 0px;" align="center">
+    <td class="v-text-align" style="padding-right: 0px;padding-left: 0px;" align="center">
       
       <img align="center" border="0" src="https://assets.unlayer.com/projects/127139/1673052727874-289756.jpg" alt="" title="" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 100%;max-width: 489px;" width="489"/>
       
@@ -200,17 +183,17 @@ body = """
     <tr>
       <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:0px 40px;font-family:'Montserrat',sans-serif;" align="left">
         
-  <div class="v-color v-line-height" style="color: #ffffff; line-height: 170%; text-align: left; word-wrap: break-word;">
-    <p style="font-size: 14px; line-height: 170%;"><span style="font-size: 12px; line-height: 20.4px;">Hablemos de las casualidades, de la suerte o de la vida. De todo lo que nos tuvo que enseñar, todo lo que tuvimos que vivir, aprender, y cuántas cosas tuviste que pasar para tomar la decisión en este preciso momento de tu vida de compartir cada momento con mis cuatro patas caminando a tu lado.</span></p>
-<p style="font-size: 14px; line-height: 170%;"> </p>
-<p style="font-size: 14px; line-height: 170%;"><span style="font-size: 12px; line-height: 20.4px;">Y cuánto tuve que esperar yo jugando muchos días, aprendiendo lo que debía para prepararme a tu llegada, todo lo que viví para que la vida me pusiera en tu camino, desde el  segundo en el que pensaste si era yo esa compañía ideal para ti. Ese segundo en el que pensaste que podríamos ser mejores amigos por siempre, que me diste una familia y un lugar como tu hijo.</span></p>
-<p style="font-size: 14px; line-height: 170%;"> </p>
-<p style="font-size: 14px; line-height: 170%;"><span style="font-size: 12px; line-height: 20.4px;">No te conozco aún pero mis cuidadores ya me hablaron de ti, ellos me aman demasiado, me cuidan mucho y aunque les da nostalgia que me vaya, ¡están  felices por tus ganas de verme! Ya me dijeron como piensas llamarme, donde  voy a vivir y lo importante que soy para ti. Por eso soy muy juicioso y me como toda la comida, aprendo a ir al baño aunque a veces me equivoco, pero lo estoy intentando. Me falta mucho por aprender pero quiero aprender a tu lado... Hay muchas cosas que no conocemos del otro pero llegamos hasta aquí, y seré el reflejo de tu respeto, tu amor, tu paciencia, tu bondad, tu comprensión y tu compromiso.</span></p>
-<p style="font-size: 14px; line-height: 170%;"> </p>
-<p style="font-size: 14px; line-height: 170%;"><span style="font-size: 12px; line-height: 20.4px;">Quiero jugar, que me dediques tiempo cada día, sé que estás ocupado pero quiero pasar tiempo de calidad contigo, ojalá me lleves a tus viajes.</span><br /><span style="font-size: 12px; line-height: 20.4px;">también quiero conocer como tú, me gusta ensuciarme, así que llévame a ser lo que soy, un ser que disfruta de la naturaleza, de la compañía y del amor, no</span><br /><span style="font-size: 12px; line-height: 20.4px;">sólo me sirvas la comida y me ignores en casa, ten en cuenta que mi presencia en tu vida no será eterna. Pero siempre recuerda que tú serás lo que yo más ame en el mundo, y espero que el lugar que me des en tu corazón sea lo suficientemente grande para que yo pueda mover mucho mi colita y nuestras almas siempre estén conectadas, en todo momento y con el paso del tiempo.</span></p>
-<p style="font-size: 14px; line-height: 170%;"> </p>
-<p style="font-size: 14px; line-height: 170%;"> </p>
-<p style="font-size: 14px; line-height: 170%;"> </p>
+  <div class="v-color v-text-align v-line-height" style="color: #ffffff; line-height: 170%; text-align: left; word-wrap: break-word;">
+    <p style="font-size: 14px; line-height: 140%;"><span style="font-size: 12px; line-height: 16.8px;">Hablemos de las casualidades, de la suerte o de la vida. De todo lo que nos tuvo que enseñar, todo lo que tuvimos que vivir, aprender, y cuántas cosas tuviste que pasar para tomar la decisión en este preciso momento de tu vida de compartir cada momento con mis cuatro patas caminando a tu lado.</span></p>
+<p style="font-size: 14px; line-height: 140%;"> </p>
+<p style="font-size: 14px; line-height: 140%;"><span style="font-size: 12px; line-height: 16.8px;">Y cuánto tuve que esperar yo jugando muchos días, aprendiendo lo que debía para prepararme a tu llegada, todo lo que viví para que la vida me pusiera en tu camino, desde el  segundo en el que pensaste si era yo esa compañía ideal para ti. Ese segundo en el que pensaste que podríamos ser mejores amigos por siempre, que me diste una familia y un lugar como tu hijo.</span></p>
+<p style="font-size: 14px; line-height: 140%;"> </p>
+<p style="font-size: 14px; line-height: 140%;"><span style="font-size: 12px; line-height: 16.8px;">No te conozco aún pero mis cuidadores ya me hablaron de ti, ellos me aman demasiado, me cuidan mucho y aunque les da nostalgia que me vaya, ¡están  felices por tus ganas de verme! Ya me dijeron como piensas llamarme, donde  voy a vivir y lo importante que soy para ti. Por eso soy muy juicioso y me como toda la comida, aprendo a ir al baño aunque a veces me equivoco, pero lo estoy intentando. Me falta mucho por aprender pero quiero aprender a tu lado... Hay muchas cosas que no conocemos del otro pero llegamos hasta aquí, y seré el reflejo de tu respeto, tu amor, tu paciencia, tu bondad, tu comprensión y tu compromiso.</span></p>
+<p style="font-size: 14px; line-height: 140%;"> </p>
+<p style="font-size: 14px; line-height: 140%;"><span style="font-size: 12px; line-height: 16.8px;">Quiero jugar, que me dediques tiempo cada día, sé que estás ocupado pero quiero pasar tiempo de calidad contigo, ojalá me lleves a tus viajes.</span><br /><span style="font-size: 12px; line-height: 16.8px;">también quiero conocer como tú, me gusta ensuciarme, así que llévame a ser lo que soy, un ser que disfruta de la naturaleza, de la compañía y del amor, no</span><br /><span style="font-size: 12px; line-height: 16.8px;">sólo me sirvas la comida y me ignores en casa, ten en cuenta que mi presencia en tu vida no será eterna. Pero siempre recuerda que tú serás lo que yo más ame en el mundo, y espero que el lugar que me des en tu corazón sea lo suficientemente grande para que yo pueda mover mucho mi colita y nuestras almas siempre estén conectadas, en todo momento y con el paso del tiempo.</span></p>
+<p style="font-size: 14px; line-height: 140%;"> </p>
+<p style="font-size: 14px; line-height: 140%;"> </p>
+<p style="font-size: 14px; line-height: 140%;"> </p>
   </div>
 
       </td>
@@ -239,14 +222,14 @@ body = """
   <div style="background-color: #041c1e;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
   <!--[if (!mso)&(!IE)]><!--><div class="v-col-padding v-col-border" style="height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;"><!--<![endif]-->
   
-<table style="font-family:'Montserrat',sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+<table id="u_content_image_23" style="font-family:'Montserrat',sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
   <tbody>
     <tr>
       <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:'Montserrat',sans-serif;" align="left">
         
 <table width="100%" cellpadding="0" cellspacing="0" border="0">
   <tr>
-    <td style="padding-right: 0px;padding-left: 0px;" align="center">
+    <td class="v-text-align" style="padding-right: 0px;padding-left: 0px;" align="center">
       
       <img align="center" border="0" src="https://assets.unlayer.com/projects/127139/1673054344717-pngwing.com%20(3).png" alt="" title="" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 100%;max-width: 180px;" width="180"/>
       
@@ -273,11 +256,11 @@ body = """
     <tr>
       <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:'Montserrat',sans-serif;" align="left">
         
-  <div class="v-color v-line-height" style="color: #ffffff; line-height: 210%; text-align: left; word-wrap: break-word;">
-    <p style="font-size: 14px; line-height: 210%;"><span style="font-size: 12px; line-height: 25.2px;">¡Recuerda que con el siguiente código podrás estar actualizándote entrando a nuestra página web y tendrás a tu alcance mi información, mis vacunas, mis fotos y la fecha próxima de cuándo podremos vernos!</span></p>
-<p style="font-size: 14px; line-height: 210%;"> </p>
-<p style="font-size: 14px; line-height: 210%;"><strong><span style="font-size: 12px; line-height: 25.2px;">Código:{0} </span></strong></p>
-<p style="line-height: 210%; font-size: 14px;"><span style="color: #ecf0f1; font-size: 14px; line-height: 29.4px;"><a rel="noopener" href="https://www.somosdomus.com/track-your-order/" target="_blank" style="color: #ecf0f1;"><span style="font-size: 14px; line-height: 29.4px;"><span style="font-size: 10px; background-color: #000000; line-height: 21px;"><strong>Click aquí para ir a la página</strong></span></span></a></span></p>
+  <div class="v-color v-text-align v-line-height" style="color: #ffffff; line-height: 210%; text-align: left; word-wrap: break-word;">
+    <p style="font-size: 14px; line-height: 170%;"><span style="font-size: 12px; line-height: 20.4px;">¡Recuerda que con el siguiente código podrás estar actualizándote entrando a nuestra página web y tendrás a tu alcance mi información, mis vacunas, mis fotos y la fecha próxima de cuándo podremos vernos!</span></p>
+<p style="font-size: 14px; line-height: 170%;"> </p>
+<p style="font-size: 14px; line-height: 170%;"><strong><span style="font-size: 12px; line-height: 20.4px;">Código:{0} </span></strong></p>
+<p style="line-height: 170%; font-size: 14px;"><span style="color: #ecf0f1; font-size: 14px; line-height: 23.8px;"><a rel="noopener" href="https://www.somosdomus.com/track-your-order/" target="_blank" style="color: #ecf0f1;"><span style="font-size: 14px; line-height: 23.8px;"><span style="font-size: 10px; background-color: #000000; line-height: 17px;"><strong>Click aquí para ir a la página</strong></span></span></a></span></p>
   </div>
 
       </td>
@@ -303,7 +286,6 @@ body = """
   <!--[if mso]></div><![endif]-->
   <!--[if IE]></div><![endif]-->
 </body>
-
 </html>
 
 

@@ -54,6 +54,10 @@ style = """    <style type="text/css">
     width: 600px !important;
   }
 
+  *{
+    color-scheme: light only;
+  }
+
 }
 
 @media (max-width: 620px) {

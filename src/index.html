@@ -1,39 +1,21 @@
-import pandas as pd
-import logging
-import smtplib
-import ssl
-import os
-import csv
-
-from dotenv import load_dotenv
-from email.message import EmailMessage
-from exceptions import alreadySent
-
-# setting up the logger
-logging.basicConfig(format='%(asctime)s %(message)s',filename = "logger.log",level = logging.DEBUG)
-
-
-load_dotenv()
-# google sheet id and current worskheetname 
-googleSheetId = '1wuHLUD9QZNnf8STTkXylxxDCc0czEYjhoVfIVCwTv5Y'
-worksheetName = 'Form'
-URL = f'https://docs.google.com/spreadsheets/d/{googleSheetId}/gviz/tq?tqx=out:csv&sheet={worksheetName}'
-
-# getting sheet as csv and then reading it as a dataframe
-df = pd.read_csv(URL)
-
-
-
-
-email_sender = "botdomus@gmail.com"
-# reading password from .env file
-email_password = os.getenv('password')
-email_recievers = ["jeanpaulsierraboom@gmail.com"]
-
-subject =  "TRACKING"
-
-
-style = """    <style type="text/css">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<!--[if gte mso 9]>
+<xml>
+  <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="x-apple-disable-message-reformatting">
+  <!--[if !mso]><!--><meta http-equiv="X-UA-Compatible" content="IE=edge"><!--<![endif]-->
+  <title></title>
+  
+    <style type="text/css">
       @media only screen and (min-width: 620px) {
   .u-row {
     width: 600px !important;
@@ -111,10 +93,10 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
     </style>
   
   
-  
-"""
 
-body = """
+<!--[if !mso]><!--><link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"><!--<![endif]-->
+
+</head>
 
 <body class="clean-body u_body" style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;background-color: #e7e7e7;color: #000000">
   <!--[if IE]><div class="ie-container"><![endif]-->
@@ -258,7 +240,7 @@ body = """
   <div class="v-color v-line-height" style="color: #ffffff; line-height: 210%; text-align: left; word-wrap: break-word;">
     <p style="font-size: 14px; line-height: 210%;"><span style="font-size: 12px; line-height: 25.2px;">¡Recuerda que con el siguiente código podrás estar actualizándote entrando a nuestra página web y tendrás a tu alcance mi información, mis vacunas, mis fotos y la fecha próxima de cuándo podremos vernos!</span></p>
 <p style="font-size: 14px; line-height: 210%;"> </p>
-<p style="font-size: 14px; line-height: 210%;"><strong><span style="font-size: 12px; line-height: 25.2px;">Código:{0} </span></strong></p>
+<p style="font-size: 14px; line-height: 210%;"><strong><span style="font-size: 12px; line-height: 25.2px;">Código: </span></strong></p>
 <p style="line-height: 210%; font-size: 14px;"><span style="color: #ecf0f1; font-size: 14px; line-height: 29.4px;"><a rel="noopener" href="https://www.somosdomus.com/track-your-order/" target="_blank" style="color: #ecf0f1;"><span style="font-size: 14px; line-height: 29.4px;"><span style="font-size: 10px; background-color: #000000; line-height: 21px;"><strong>Click aquí para ir a la página</strong></span></span></a></span></p>
   </div>
 
@@ -287,88 +269,3 @@ body = """
 </body>
 
 </html>
-
-
-"""
-
-
-
-
-
-# getting selected users
-pendingUsers = df[df['Enviar'] == 1]
-
-context = ssl.create_default_context()
-
-for index,row in pendingUsers.iterrows():
-    name = row['Nombre Propietario']
-    petName = row['Nombre del Cachorro']
-    email = row['Correo Electrónico']
-    trackID = row['Guía']
-
-
-    # duplicated status
-    duplicated = False
-    # reading db
-    with open('db.txt','r') as f:
-        lines = list(map(lambda x: x.replace('\n',''),f.readlines()))
-        try:
-            if email in lines:
-                raise alreadySent
-                print("duplicated hmmm")
-        except alreadySent:
-            duplicated = True
-            logging.error(f"Email already sent to user with email:{email} (skipping email) ")
-
-
-        
-    if not duplicated:
-    # writing into db
-        print("about to send email...")
-
-        body = body.format(int(trackID))
-        body = body.replace('<style></style>', style)
-
-        
-        # setting up email
-        em = EmailMessage()
-        em['From'] = email_password
-        em['To'] = email
-        em['Subject'] = subject
-        em.set_content(body,subtype = 'html')
-
-        # sed
-        with smtplib.SMTP_SSL("smtp.gmail.com",465,context = context) as smtp:
-            try:
-                smtp.login(email_sender,email_password)
-                smtp.send_message(em)
-                logging.info(f"Email sended to: {email} succesfully")
-                with open('db.txt','a') as f:
-                    print(email,file = f)
-            except Exception as e:
-                logging.error(str(e))
-            #smtp.sendmail(email_sender,email,em.as_string())
-        
-        
-
-
-
-
-
-
-
- 
-
-
-"""
-context = ssl.create_default_context()
-with smtplib.SMTP_SSL("smtp.gmail.com",465, context = context) as smtp:
-    try:
-        smtp.login(email_sender,email_password)
-        smtp.send_message(em)
-        logging.info(f"Email sended to: {email_recievers} successfully")
-    except Exception as e:
-        logging.error(str(e))
-    #smtp.sendmail(email_sender, email_recievers, em.as_string())
-"""
-

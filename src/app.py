@@ -80,6 +80,9 @@ style = """    <style type="text/css">
   .u-col > div {
     margin: 0 auto;
   }
+  *{
+    color-scheme: light only;
+  }
 }
 body {
   margin: 0;

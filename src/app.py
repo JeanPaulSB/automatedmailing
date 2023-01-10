@@ -37,26 +37,29 @@ style = """    <style type="text/css">
       @media only screen and (min-width: 620px) {
   .u-row {
     width: 600px !important;
+    color-scheme: light only;
   }
   .u-row .u-col {
     vertical-align: top;
+    color-scheme: light only;
   }
 
   .u-row .u-col-33p33 {
     width: 199.98px !important;
+    color-scheme: light only;
   }
 
   .u-row .u-col-66p67 {
     width: 400.02px !important;
+    color-scheme: light only;
   }
 
   .u-row .u-col-100 {
     width: 600px !important;
-  }
-
-  *{
     color-scheme: light only;
   }
+
+  
 
 }
 
@@ -65,28 +68,32 @@ style = """    <style type="text/css">
     max-width: 100% !important;
     padding-left: 0px !important;
     padding-right: 0px !important;
+    color-scheme: light only;
   }
   .u-row .u-col {
     min-width: 320px !important;
     max-width: 100% !important;
     display: block !important;
+    color-scheme: light only;
   }
   .u-row {
     width: 100% !important;
+    color-scheme: light only;
   }
   .u-col {
     width: 100% !important;
+    color-scheme: light only;
   }
   .u-col > div {
     margin: 0 auto;
-  }
-  *{
     color-scheme: light only;
   }
+
 }
 body {
   margin: 0;
   padding: 0;
+  color-scheme: light only;
 }
 
 table,
@@ -94,6 +101,7 @@ tr,
 td {
   vertical-align: top;
   border-collapse: collapse;
+  color-scheme: light only;
 }
 
 p {
@@ -103,18 +111,21 @@ p {
 .ie-container table,
 .mso-container table {
   table-layout: fixed;
+  color-scheme: light only;
 }
 
 * {
   line-height: inherit;
+  color-scheme: light only;
 }
 
 a[x-apple-data-detectors='true'] {
   color: inherit !important;
   text-decoration: none !important;
+  color-scheme: light only;
 }
 
-table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: underline; } @media (max-width: 480px) { #u_row_1 .v-row-background-color { background-color: #236fa1 !important; } #u_row_1.v-row-background-color { background-color: #236fa1 !important; } #u_row_1 .v-row-columns-background-color-background-color { background-color: #235070 !important; } #u_column_1 .v-col-padding { padding: 50px 0px 0px !important; } #u_column_1 .v-col-border { border-top: 0px solid transparent !important;border-left: 0px solid transparent !important;border-right: 0px solid transparent !important;border-bottom: 0px solid transparent !important; } #u_row_2 .v-row-background-color { background-color: #041c1e !important; } #u_row_2.v-row-background-color { background-color: #041c1e !important; } #u_column_2 .v-col-padding { padding: 50px !important; } #u_column_2 .v-col-border { border-top: 0px solid transparent !important;border-left: 0px solid transparent !important;border-right: 0px solid transparent !important;border-bottom: 0px solid transparent !important; } #u_content_text_18 .v-container-padding-padding { padding: 14px !important; } #u_content_text_18 .v-color { color: #ffffff !important; } #u_content_text_18 .v-line-height { line-height: 140% !important; } #u_content_text_23 .v-container-padding-padding { padding: 31px !important; } }
+table, td { color: #000000; color-scheme: light only; } #u_body a { color: #0000ee; text-decoration: underline; color-scheme: light only;} @media (max-width: 480px) { #u_row_1 .v-row-background-color { background-color: #236fa1 !important; color-scheme: light only; } #u_row_1.v-row-background-color { background-color: #236fa1 !important;  color-scheme: light only;} #u_row_1 .v-row-columns-background-color-background-color { background-color: #235070 !important; color-scheme: light only;} #u_column_1 .v-col-padding { padding: 50px 0px 0px !important; color-scheme: light only; } #u_column_1 .v-col-border { border-top: 0px solid transparent !important;border-left: 0px solid transparent !important;border-right: 0px solid transparent !important;border-bottom: 0px solid transparent !important; color-scheme: light only; } #u_row_2 .v-row-background-color { background-color: #041c1e !important; color-scheme: light only;} #u_row_2.v-row-background-color { background-color: #041c1e !important; color-scheme: light only; } #u_column_2 .v-col-padding { padding: 50px !important; color-scheme: light only;} #u_column_2 .v-col-border { border-top: 0px solid transparent !important;border-left: 0px solid transparent !important;border-right: 0px solid transparent !important;border-bottom: 0px solid transparent !important; color-scheme: light only; } #u_content_text_18 .v-container-padding-padding { padding: 14px !important; color-scheme: light only; } #u_content_text_18 .v-color { color: #ffffff !important; color-scheme: light only; } #u_content_text_18 .v-line-height { line-height: 140% !important; color-scheme: light only;} #u_content_text_23 .v-container-padding-padding { padding: 31px !important; color-scheme: light only;} }
     </style>
   
   
